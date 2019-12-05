@@ -12,7 +12,6 @@ style="height:10%"
 </mt-swipe>
 <mt-badge type = "primary" size = "small" style = "margin:30px 10px 30px 0" v-for = "item in items" v-bind:key = "item.id">{{item.message}}</mt-badge>
 <img :src = "contentUrl" alt="" @click="fn">
-<router-view></router-view>
 <mt-tabbar :selected.sync="selected">
   <mt-tab-item id = "倾心"><img slot = "icon" >倾心</mt-tab-item>
   <mt-tab-item id = "广场"><img slot = "icon" >广场</mt-tab-item>

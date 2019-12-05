@@ -10,14 +10,13 @@ style="height:10%"
   <mt-swipe-item class="s1"><a href=""><img style = " max-width: 100% " src="../assets/images/swipe1.png" alt=""></a></mt-swipe-item>
   <mt-swipe-item class="s2"><a href=""><img style = " max-width: 100% " src="../assets/images/swipe2.png" alt=""></a></mt-swipe-item>
 </mt-swipe>
-<mt-badge type = "primary" size = "small" style = "margin:30px 10px 30px 0" v-for = "item in items" v-bind:key = "item.id">{{item.message}}</mt-badge>
+<mt-badge type = "primary" size = "small" style = "margin:70px 10px 30px 0" v-for = "item in items" v-bind:key = "item.id">{{item.message}}</mt-badge>
 <img :src = "contentUrl" alt="" @click="fn">
-<router-view></router-view>
 <mt-tabbar :selected.sync="selected">
-  <mt-tab-item id = "倾心"><img slot = "icon" >倾心</mt-tab-item>
-  <mt-tab-item id = "广场"><img slot = "icon" >广场</mt-tab-item>
+  <mt-tab-item id = "外卖"><img slot = "icon" >倾心</mt-tab-item>
+  <mt-tab-item id = "订单"><img slot = "icon" >广场</mt-tab-item>
   <mt-tab-item id = "发现"><img slot = "icon" >发布</mt-tab-item>
-  <mt-tab-item id = "聊天"><img slot = "icon" >聊天</mt-tab-item>
+  <mt-tab-item id = "我的"><img slot = "icon" >聊天</mt-tab-item>
   <mt-tab-item id = "我的"><img slot = "icon" >我的</mt-tab-item>
 </mt-tabbar>
 </div>
@@ -76,6 +75,20 @@ export default {
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
+/* .s1{
+  background-image: url(../assets/images/swipe1.png);
+  background-repeat:no-repeat;
+  background-size: contain;
+}
+ .s2{
+  background-image: url(../assets/images/swipe2.png);
+  background-size: contain;
+  background-repeat:no-repeat;
+
+} */
+/* .s3{
+  background-image: url(../assets/images/swipe2.png);
+} */
 .com{
   float: left;
   width: 100%
